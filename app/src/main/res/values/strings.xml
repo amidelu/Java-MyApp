@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">PersonalDemo</string>
+    <string name="profile_image">My Profile Image</string>
+    <string name="email">Email:</string>
+    <string name="email_description">Type your email address</string>
+    <string name="username">Username:</string>
+    <string name="profile_name">Mohammad Delowar Hossain</string>
+    <string name="father_name">Father Name:</string>
+    <string name="mother_name">Mother Name:</string>
+    <string name="nationality">Nationality:</string>
+    <string name="height">Height:</string>
+    <string name="weight">Weight:</string>
+    <string name="hobby">Hobby:</string>
+    <string name="short_bio">Short Bio:</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="favourite">Favourite</string>
+    <string name="social">Social</string>
+    <string name="others">Others</string>
+    <string name="share">Share</string>
+    <string name="exit">Exit</string>
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation drawer</string>
 </resources>

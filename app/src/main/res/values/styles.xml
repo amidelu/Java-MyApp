@@ -8,4 +8,31 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="textStyleTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:textAppearance">@style/Platform.MaterialComponents</item>
+    </style>
+
+    <style name="listHeadingStyle" parent="textStyleTheme">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="editTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/rounded_editText</item>
+        <item name="android:ems">12</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
 </resources>

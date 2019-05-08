@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyProfile">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="?attr/actionBarTheme">
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/profileImageId"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile"
+        android:contentDescription="@string/profile_image"
+        />
+
+    <TextView
+        android:id="@+id/profileNameId"
+        android:text="@string/profile_name"
+        style="@style/textStyleTheme"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/editTextMainHeadingId"
+        style="@style/textStyleTheme"
+        android:text="Please fill up your extra information:"
+        android:layout_marginTop="25dp"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/usernameTextId"
+            style="@style/listHeadingStyle"
+            android:text="@string/username" />
+
+        <EditText
+            android:id="@+id/usernameEditId"
+            style="@style/editTextStyle"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/emailTextId"
+            style="@style/listHeadingStyle"
+            android:text="@string/email"
+            android:layout_below="@+id/usernameTextId"/>
+
+        <EditText
+            android:id="@+id/emailEditId"
+            style="@style/editTextStyle"
+            android:layout_below="@id/usernameEditId"
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            android:id="@+id/fatherTextId"
+            style="@style/listHeadingStyle"
+            android:text="@string/father_name"
+            android:layout_below="@+id/emailTextId"/>
+
+        <EditText
+            android:id="@+id/fatherEditId"
+            style="@style/editTextStyle"
+            android:layout_below="@id/emailEditId"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/motherTextId"
+            style="@style/listHeadingStyle"
+            android:text="@string/mother_name"
+            android:layout_below="@+id/fatherTextId"/>
+
+        <EditText
+            android:id="@+id/motherEditId"
+            style="@style/editTextStyle"
+            android:layout_below="@id/fatherEditId"
+            android:inputType="text"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/nationalityTextId"
+            style="@style/listHeadingStyle"
+            android:text="@string/nationality"
+            android:layout_below="@+id/motherTextId" />
+
+        <EditText
+            android:id="@+id/nationalityEditId"
+            style="@style/editTextStyle"
+            android:layout_below="@id/motherEditId"
+            android:layout_marginTop="15dp"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/heightTextId"
+            style="@style/listHeadingStyle"
+            android:text="@string/height"
+            android:layout_below="@+id/nationalityTextId"/>
+
+        <EditText
+            android:id="@+id/heightEditId"
+            style="@style/editTextStyle"
+            android:layout_below="@id/nationalityEditId"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/weightTextId"
+            style="@style/listHeadingStyle"
+            android:text="@string/weight"
+            android:layout_below="@+id/heightTextId"/>
+
+        <EditText
+            android:id="@+id/weightEditId"
+            style="@style/editTextStyle"
+            android:layout_below="@id/heightEditId"
+            android:inputType="numberSigned"/>
+
+        <TextView
+            android:id="@+id/hobbyTextId"
+            style="@style/listHeadingStyle"
+            android:text="@string/hobby"
+            android:layout_below="@+id/weightTextId"/>
+
+        <EditText
+            android:id="@+id/hobbyEditId"
+            style="@style/editTextStyle"
+            android:layout_below="@id/weightEditId"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/shortBioTextId"
+            style="@style/listHeadingStyle"
+            android:text="@string/short_bio"
+            android:layout_below="@+id/hobbyTextId"/>
+
+        <EditText
+            android:id="@+id/shortBioEditId"
+            android:layout_height="60dp"
+            style="@style/editTextStyle"
+            android:layout_below="@id/hobbyEditId"
+            android:inputType="text"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

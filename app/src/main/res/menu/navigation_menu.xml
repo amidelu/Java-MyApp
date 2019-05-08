@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:title="@string/dashboard"
+            android:id="@+id/dashboardId"
+            android:icon="@drawable/dashboard"/>
+
+        <item
+            android:title="@string/favourite"
+            android:id="@+id/favouriteId"
+            android:icon="@drawable/favorite"/>
+
+        <item
+            android:title="@string/social"
+            android:id="@+id/socialId"
+            android:icon="@drawable/social"/>
+
+    </group>
+
+    <item android:title="@string/others">
+
+        <menu>
+
+            <item
+                android:title="@string/share"
+                android:id="@+id/shareId"
+                android:icon="@drawable/share"/>
+
+            <item
+                android:title="@string/exit"
+                android:id="@+id/exitId"
+                android:icon="@drawable/exit"/>
+
+        </menu>
+
+    </item>
+
+</menu>
