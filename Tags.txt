@@ -1,0 +1,16 @@
+Log in screen animation
+Gradient using xml file
+Log in validation
+Mock up image used for sign in layout
+Rounded edt text using xml
+Followed Material Design guidlines using design library
+Card View implemented in Dashboard
+Share implemented
+App theming concept used in style.xml following Material Design guideline
+Material color pallette used in color.xml
+App localization is used
+Robust concept is used in designing the app
+Navigation drawer implemented in My Profile
+Bottom Navigation implemented in Dashboard
+Static Toolbar used by coding in xml
+On back pressed exit alert box implemented
