@@ -27,12 +27,20 @@
     <style name="editTextStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">35dp</item>
-        <item name="android:background">@drawable/rounded_editText</item>
+        <item name="android:background">@drawable/rounded_edittext</item>
         <item name="android:ems">12</item>
         <item name="android:layout_alignParentEnd">true</item>
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:layout_marginEnd">10dp</item>
         <item name="android:layout_marginBottom">10dp</item>
     </style>
+
+    <!--This style is used to show navigation drawer over status bar and implemented in Android Manifest file under MyProfile activity as theme-->
+    <!--<style name="AppTheme.NoActionBar">-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    <!--</style>-->
 
 </resources>

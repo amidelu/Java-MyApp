@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/myProfileBottomId"
+        android:title="@string/my_profile"
+        android:icon="@drawable/profile"
+        android:orderInCategory="2"/>
+
+    <item
+        android:id="@+id/dashboardBottomId"
+        android:title="@string/dashboard"
+        android:icon="@drawable/dashboard"
+        android:orderInCategory="1" />
+
+    <item
+        android:id="@+id/settingsBottomId"
+        android:title="@string/settings"
+        android:icon="@drawable/settings"
+        android:orderInCategory="3"/>
+
+</menu>
