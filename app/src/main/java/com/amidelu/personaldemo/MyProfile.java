@@ -2,6 +2,7 @@ package com.amidelu.personaldemo;
 
 // This is Navigation drawer java class. Navigation drawer depends on 2 layout resource file (navigation drawer & navigation header) and 1 menu file (navigation menu)
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -64,9 +65,8 @@ public class MyProfile extends AppCompatActivity implements NavigationView.OnNav
         int id = menuItem.getItemId();
 
         switch (id) {
-
             case R.id.dashboardId:
-
+                startActivity(new Intent(this, MainActivity.class));
                 break;
 
             case R.id.favouriteId:

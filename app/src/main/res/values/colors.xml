@@ -3,7 +3,7 @@
 <resources>
     <color name="colorPrimary">#311b92</color>
     <color name="colorPrimaryDark">#13013C</color>
-    <color name="colorAccent">#00e676</color>
+    <color name="colorAccent">#2196F3</color>
 
     <color name="primaryLightColor">#6746c3</color>
     <color name="secondaryLightColor">#66ffa6</color>
@@ -16,6 +16,9 @@
     <color name="cardViewFirstRow">#3F51B5</color>
     <color name="cardViewSecondRow">#66BB6A</color>
     <color name="cardViewTextColor">#424242</color>
+
+    <color name="colorRed">#B71C1C</color>
+    <color name="colorGreen">#009688</color>
 
     <color name="cardview_dark_background">@color/cardViewBorder</color>
 </resources>

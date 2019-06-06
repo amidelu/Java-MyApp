@@ -8,12 +8,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         tools:context=".MyProfile">
 
         <ImageView
             android:id="@+id/profileImageId"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:contentDescription="@string/profile_image"
@@ -27,149 +29,152 @@
 
         <TextView
             android:id="@+id/editTextMainHeadingId"
-            style="@style/textStyleTheme"
-            android:layout_marginTop="25dp"
-            android:text="Please fill up your extra information:"
-            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/secondaryTextColor"
+            android:layout_marginBottom="10dp"
+            android:text="@string/fill_information"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/secondaryLightColor"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
 
-            <TextView
-                android:id="@+id/usernameTextId"
-                style="@style/listHeadingStyle"
-                android:text="@string/username" />
+        <android.support.design.widget.TextInputLayout
+            style="@style/editTextStyle">
 
-            <EditText
+            <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/usernameEditId"
                 style="@style/editTextStyle"
-                android:inputType="text"
-                android:paddingStart="10dp"
-                android:paddingEnd="5dp"/>
+                android:hint="@string/username"
+                android:inputType="text"/>
 
-            <TextView
-                android:id="@+id/emailTextId"
-                style="@style/listHeadingStyle"
-                android:layout_below="@+id/usernameTextId"
-                android:text="@string/email" />
+        </android.support.design.widget.TextInputLayout>
 
-            <EditText
-                android:id="@+id/emailEditId"
+        <android.support.design.widget.TextInputLayout
+            style="@style/editTextStyle">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/recoveryEmailEditId"
                 style="@style/editTextStyle"
-                android:layout_below="@id/usernameEditId"
-                android:inputType="textEmailAddress"
-                android:paddingStart="10dp"
-                android:paddingEnd="5dp"/>
+                android:hint="@string/recovery_email"
+                android:inputType="textEmailAddress"/>
 
-            <TextView
-                android:id="@+id/fatherTextId"
-                style="@style/listHeadingStyle"
-                android:layout_below="@+id/emailTextId"
-                android:text="@string/father_name" />
+        </android.support.design.widget.TextInputLayout>
 
-            <EditText
+        <android.support.design.widget.TextInputLayout
+            style="@style/editTextStyle">
+
+            <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/fatherEditId"
                 style="@style/editTextStyle"
-                android:layout_below="@id/emailEditId"
-                android:inputType="text"
-                android:paddingStart="10dp"
-                android:paddingEnd="5dp"/>
+                android:hint="@string/father_name"
+                android:inputType="text"/>
 
-            <TextView
-                android:id="@+id/motherTextId"
-                style="@style/listHeadingStyle"
-                android:layout_below="@+id/fatherTextId"
-                android:text="@string/mother_name" />
+        </android.support.design.widget.TextInputLayout><android.support.design.widget.TextInputLayout
+            style="@style/editTextStyle">
 
-            <EditText
+            <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/motherEditId"
                 style="@style/editTextStyle"
-                android:layout_below="@id/fatherEditId"
-                android:layout_marginTop="15dp"
-                android:inputType="text"
-                android:paddingStart="10dp"
-                android:paddingEnd="5dp"/>
+                android:hint="@string/mother_name"
+                android:inputType="text"/>
 
-            <TextView
-                android:id="@+id/nationalityTextId"
-                style="@style/listHeadingStyle"
-                android:layout_below="@+id/motherTextId"
-                android:text="@string/nationality" />
+        </android.support.design.widget.TextInputLayout><android.support.design.widget.TextInputLayout
+            style="@style/editTextStyle">
 
-            <EditText
+            <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/nationalityEditId"
                 style="@style/editTextStyle"
-                android:layout_below="@id/motherEditId"
-                android:layout_marginTop="15dp"
-                android:inputType="text"
-                android:paddingStart="10dp"
-                android:paddingEnd="5dp"/>
+                android:hint="@string/nationality"
+                android:inputType="text"/>
 
-            <TextView
-                android:id="@+id/heightTextId"
-                style="@style/listHeadingStyle"
-                android:layout_below="@+id/nationalityTextId"
-                android:text="@string/height" />
+        </android.support.design.widget.TextInputLayout><android.support.design.widget.TextInputLayout
+            style="@style/editTextStyle">
 
-            <EditText
+            <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/heightEditId"
                 style="@style/editTextStyle"
-                android:layout_below="@id/nationalityEditId"
-                android:inputType="number"
-                android:paddingStart="10dp"
-                android:paddingEnd="5dp"/>
+                android:hint="@string/height"
+                android:inputType="numberDecimal"/>
 
-            <TextView
-                android:id="@+id/weightTextId"
-                style="@style/listHeadingStyle"
-                android:layout_below="@+id/heightTextId"
-                android:text="@string/weight" />
+        </android.support.design.widget.TextInputLayout><android.support.design.widget.TextInputLayout
+            style="@style/editTextStyle">
 
-            <EditText
+            <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/weightEditId"
                 style="@style/editTextStyle"
-                android:layout_below="@id/heightEditId"
-                android:inputType="numberSigned"
-                android:paddingStart="10dp"
-                android:paddingEnd="5dp"/>
+                android:hint="@string/weight"
+                android:inputType="number"/>
 
-            <TextView
-                android:id="@+id/hobbyTextId"
-                style="@style/listHeadingStyle"
-                android:layout_below="@+id/weightTextId"
-                android:text="@string/hobby" />
+        </android.support.design.widget.TextInputLayout><android.support.design.widget.TextInputLayout
+            style="@style/editTextStyle">
 
-            <EditText
+            <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/hobbyEditId"
                 style="@style/editTextStyle"
-                android:layout_below="@id/weightEditId"
-                android:inputType="text"
-                android:paddingStart="10dp"
-                android:paddingEnd="5dp"/>
+                android:hint="@string/hobby"
+                android:inputType="text"/>
 
-            <TextView
-                android:id="@+id/shortBioTextId"
-                style="@style/listHeadingStyle"
-                android:layout_below="@+id/hobbyTextId"
-                android:text="@string/short_bio" />
-
-            <EditText
-                android:id="@+id/shortBioEditId"
-                style="@style/editTextStyle"
-                android:layout_height="60dp"
-                android:layout_below="@id/hobbyEditId"
-                android:inputType="text"
-                android:paddingStart="10dp"
-                android:paddingEnd="5dp"/>
-
-        </RelativeLayout>
+        </android.support.design.widget.TextInputLayout>
 
         <TextView
-            style="@style/textStyleTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
             android:text="@string/privacy"
-            android:textAlignment="center"/>
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/saveBtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:padding="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/roundedbuttongreen"
+                android:drawableStart="@drawable/save"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/resetBtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:padding="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/saveBtnId"
+                android:background="@drawable/roundedbuttonblue"
+                android:drawableStart="@drawable/reset"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/cancelBtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:padding="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/resetBtnId"
+                android:background="@drawable/roundedbuttonred"
+                android:drawableStart="@drawable/cancel"/>
+
+
+        </RelativeLayout>
 
     </LinearLayout>
 

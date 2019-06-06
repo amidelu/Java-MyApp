@@ -12,7 +12,7 @@
         android:paddingBottom="50dp">
 
         <!--Dashboard Design using CardView in Main Activity-->
-        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"

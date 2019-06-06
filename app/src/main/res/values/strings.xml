@@ -1,17 +1,17 @@
 <resources>
     <string name="app_name">Personal App</string>
     <string name="profile_image">My Profile Image</string>
-    <string name="email">Email:</string>
+    <string name="email">Email</string>
     <string name="email_description">Type your email address</string>
-    <string name="username">Username:</string>
+    <string name="username">Username</string>
     <string name="profile_name">Delowar Hossain</string>
-    <string name="father_name">Father Name:</string>
-    <string name="mother_name">Mother Name:</string>
-    <string name="nationality">Nationality:</string>
-    <string name="height">Height:</string>
-    <string name="weight">Weight:</string>
-    <string name="hobby">Hobby:</string>
-    <string name="short_bio">Short Bio:</string>
+    <string name="father_name">Father Name</string>
+    <string name="mother_name">Mother Name</string>
+    <string name="nationality">Nationality</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="hobby">Hobby</string>
+    <string name="short_bio">Short Bio</string>
     <string name="dashboard">Dashboard</string>
     <string name="favourite">Favourite</string>
     <string name="social">Social Media</string>
@@ -40,4 +40,9 @@
     <string name="female">Female</string>
     <string name="terms_check">By Creating an account, you agree to our Terms and Conditions.</string>
     <string name="register_now">Register Now</string>
+    <string name="fill_information">Please fill up your extra information:</string>
+    <string name="recovery_email">Recovery Email</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
 </resources>
