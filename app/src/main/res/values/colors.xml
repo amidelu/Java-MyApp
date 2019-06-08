@@ -8,7 +8,7 @@
     <color name="primaryLightColor">#6746c3</color>
     <color name="secondaryLightColor">#66ffa6</color>
     <color name="secondaryDarkColor">#00b248</color>
-    <color name="primaryTextColor">#ffffff</color>
+    <color name="white">#ffffff</color>
     <color name="secondaryTextColor">#000000</color>
     <color name="centerLightColor">#ce93d8</color>
 
@@ -19,6 +19,7 @@
 
     <color name="colorRed">#B71C1C</color>
     <color name="colorGreen">#009688</color>
+    <color name="gray">#E0E0E0</color>
 
     <color name="cardview_dark_background">@color/cardViewBorder</color>
 </resources>
