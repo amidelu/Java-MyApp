@@ -38,4 +38,20 @@
         <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
     <!--</style>-->
 
+    <style name="restaurantMenuLayer">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+
+    </style>
+
+    <style name="restaurantMenuImageButton">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
 </resources>
